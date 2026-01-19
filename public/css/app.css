@@ -205,6 +205,31 @@ body {
     }
 }
 
+/* section number and baground images */
+
+.bgimg {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/stats-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+
+    h1 {
+        color: white;
+        font-size: 60px;
+
+    }
+
+    p {
+        color: grey;
+        font-weight: bold;
+    }
+}
 
 /* book a table  */
 
