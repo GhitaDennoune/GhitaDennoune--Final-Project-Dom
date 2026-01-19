@@ -64,6 +64,103 @@ body {
 
 }
 
+/* hero section   */
+.hero {
+    width: 100%;
+    height: 88vh;
+    background-color: rgba(190, 186, 186, 0.879);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.descr {
+
+    width: 70vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .text {
+        h1 {
+
+            font-family: 'Amatic SC', cursive;
+            font-size: 60px;
+        }
+
+        p {
+            color: rgb(80, 80, 80);
+            font-size: 20px;
+        }
+    }
+
+    .butnhero {
+        height: 40px;
+        display: flex;
+        gap: 20px;
+
+        .hero1 {
+            width: 120px;
+            padding: 5px;
+            border: none;
+            background-color: rgb(202, 47, 27);
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+
+
+        }
+
+        .hero2 {
+            border: none;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+
+            i {
+                color: rgb(202, 47, 27);
+                font-size: 30px;
+            }
+        }
+
+
+    }
+
+}
+
+.imgright {
+
+    width: 120vh;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        padding-left: 150px;
+        position: absolute;
+        animation: tabsile 4s linear infinite alternate;
+    }
+
+    @keyframes tabsile {
+
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+
+
+            transform: translateY(450px);
+        }
+    }
+
+
+
+}
+
+
 /* section why choose yummy  */
 .why {
     width: 100%;
