@@ -454,6 +454,134 @@ body {
     }
 }
 
+/* section des chefs  */
+.chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 115vh;
+    gap: 30px;
+}
+
+.title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+
+    p {
+        color: gainsboro;
+    }
+
+    h1 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 45px;
+
+        span {
+            color: rgba(210, 9, 9, 0.777);
+        }
+
+    }
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.chef-card {
+    position: relative;
+    width: 55vh;
+    height: 85vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.5s ease,
+}
+
+.chef-card:hover {
+    /* transform: translateY(-15px); */
+    /* box-shadow: 0 10px 25px rgba(0,0,0,0.2); */
+    transform: scale(1.1);
+}
+
+.chef-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 15px;
+
+    h3 {
+        font-size: 25px;
+    }
+
+    span {
+        color: rgb(181, 179, 179);
+    }
+
+    p {
+        color: rgb(181, 179, 179);
+        font-weight: 300;
+    }
+}
+
+.images {
+    position: relative;
+}
+
+.images img:first-child {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.iconenone {
+    position: absolute;
+    touch-action: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+    transition: 0.6s ease;
+    z-index: 5;
+    background-color: rgba(221, 212, 212, 0.649);
+    height: 20vh;
+    width: 5vh;
+    align-items: center;
+    padding-top: 10px;
+    bottom: 240px;
+}
+
+.iconenone i {
+    color: rgb(108, 108, 108);
+
+
+}
+
+.chef-card:hover .iconenone {
+    right: 15px;
+    opacity: 1;
+}
+
+.dilale {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    filter: brightness(0) invert(1);
+}
+
+
+
+
 /* book a table  */
 
 .book-table {
