@@ -9,6 +9,103 @@ body {
     width: 100%;
 }
 
+
+
+.modaldiv {
+    width: 65vh;
+    display: none;
+    position: absolute;
+
+    height: 65vh;
+    background: rgba(229, 222, 222, 0.614);
+    color: rgb(163, 117, 117);
+    border-radius: 15px;
+    top: 20%;
+    left: 50%;
+    z-index: 5;
+
+    h1 {
+        color: #000000;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+}
+
+
+.modalbtn {
+    width: 120px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(202, 47, 27);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.close {
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background-color: red;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 40px;
+
+    input {
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        color: #000000;
+        background-color: #46464681;
+        width: 35vh;
+
+    }
+
+    input::placeholder {
+        color: #000000;
+    }
+
+    .regist {
+        width: 120px;
+        padding: 5px;
+        border: none;
+        background-color: rgb(202, 47, 27);
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+
+    }
+
+    p {
+        color: #000000;
+
+        span {
+            color: rgb(202, 47, 27);
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
 .nav {
 
     width: 100%;
@@ -42,7 +139,7 @@ body {
 .button {
 
     display: flex;
-
+    gap: 30px;
 }
 
 .title span {
@@ -580,10 +677,7 @@ body {
 }
 
 
-
-
 /* book a table  */
-
 .book-table {
 
     width: 100%;
