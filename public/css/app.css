@@ -1383,7 +1383,7 @@ body {
                 gap: 20px;
 
                 .adresse {
-                    background-color: rgb(232, 232, 232);
+                    background-color: rgb(255, 255, 255);
                     /* width: 100vh;
                     height: 10vh; */
                     flex: 1;
@@ -1397,7 +1397,7 @@ body {
                 }
 
                 .call {
-                    background-color: rgb(232, 232, 232);
+                    background-color: rgb(255, 255, 255);
                     /* width: 100vh;
                     height: 10vh; */
                     flex: 1;
@@ -1418,7 +1418,7 @@ body {
                 gap: 20px;
 
                 .email {
-                    background-color: rgb(232, 232, 232);
+                    background-color: rgb(255, 255, 255);
                     /* width: 80vh;
                     height: 10vh; */
                     flex: 1;
