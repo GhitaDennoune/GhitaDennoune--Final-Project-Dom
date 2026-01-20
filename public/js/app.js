@@ -106,4 +106,63 @@ breakf.style.display = "block";
 
 
 })
+// ************************caroussel lwl ************************
+
+
+
+let carousel = document.querySelector('.carousel');
+let prevBtn = document.querySelector('.prev-btn');
+let nextBtn = document.querySelector('.next-btn');
+let indicators = document.querySelectorAll('.indicator');
+
+let currentSlide = 0;
+const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    indicators.forEach((indicator, index) => {
+        if (index === currentSlide) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        goToSlide(index);
+    });
+});
+
+// setInterval(nextSlide, 5000);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevSlide();
+    if (e.key === 'ArrowRight') nextSlide();
+});
+
+
+
+
+
 
