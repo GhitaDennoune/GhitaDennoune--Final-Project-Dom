@@ -805,7 +805,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
 
 
 
@@ -857,30 +857,36 @@ body {
         height: 100%;
         transition: transform 0.3s ease-in-out;
     }
-.cont{
-display: flex;
-flex-direction: column;
-gap: 20px;
- h4{
-font-size: 30px;
-font-weight: 100;
-font-family: 'Amatic SC', cursive;
 
- }
- h5{
-color: grey;
-font-family: 'Amatic SC', cursive;
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
- }
- .car{
-    font-size: 20px;
- }
-i{
-    color: rgba(210, 9, 9, 0.777) ;
-    font-size: 25px;
-}
+        h4 {
+            font-size: 30px;
+            font-weight: 100;
+            font-family: 'Amatic SC', cursive;
 
-}
+        }
+
+        h5 {
+            color: grey;
+            font-family: 'Amatic SC', cursive;
+
+        }
+
+        .car {
+            font-size: 20px;
+        }
+
+        i {
+            color: rgba(210, 9, 9, 0.777);
+            font-size: 25px;
+        }
+
+    }
+
     .carousel-slide {
         min-width: 100%;
         height: 100%;
@@ -1290,18 +1296,19 @@ i{
 
 /* **contact us ** */
 .contact {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 100%;
-    height: 160vh;
-    padding-top: 50px;
+    height: 190vh;
+    padding-top: 50px 0;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 
     .maps {
         display: flex;
 
         justify-content: center;
+        padding-top: 50px;
     }
 
     .conta {
@@ -1309,13 +1316,15 @@ i{
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding-top: 40px;
+
 
         .button4 {
             padding: 5px;
             width: 100px;
             height: 30px;
             text-align: center;
-            background-color: rgba(255, 166, 0, 0.616);
+            /* background-color: rgba(255, 166, 0, 0.616); */
             border-radius: 20px;
             color: orange;
             font-weight: bold;
@@ -1332,7 +1341,8 @@ i{
                 color: rgb(202, 47, 27);
             }
         }
-        p{
+
+        p {
             color: rgb(195, 195, 195);
         }
     }
@@ -1340,13 +1350,14 @@ i{
     .les-informations {
         /* padding-inline: 90px; */
 
-        background-color: palegreen;
-        width: 70%;
+        /* background-color: palegreen; */
+        width: 80%;
+        /* margin: auto; */
         height: 60vh;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding-inline: 160px;
+        gap: 30px;
+        padding-inline: 143px;
 
 
         .small-part {
@@ -1368,19 +1379,34 @@ i{
             .saf1 {
                 display: flex;
                 width: 100%;
-                background-color: blue;
-                gap: 40px;
+                /* background-color: blue; */
+                gap: 20px;
 
                 .adresse {
                     background-color: rgb(232, 232, 232);
-                    width: 100vh;
-                    height: 10vh;
+                    /* width: 100vh;
+                    height: 10vh; */
+                    flex: 1;
+                    padding: 20px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+
                 }
 
                 .call {
                     background-color: rgb(232, 232, 232);
-                    width: 100vh;
-                    height: 10vh;
+                    /* width: 100vh;
+                    height: 10vh; */
+                    flex: 1;
+                    padding: 20px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
                 }
 
             }
@@ -1388,20 +1414,34 @@ i{
             .saf2 {
 
                 display: flex;
-                background-color: rgb(0, 255, 200);
-                gap: 30px;
+                /* background-color: rgb(0, 255, 200); */
+                gap: 20px;
 
                 .email {
                     background-color: rgb(232, 232, 232);
-                    width: 80vh;
-                    height: 10vh;
+                    /* width: 80vh;
+                    height: 10vh; */
+                    flex: 1;
+                    padding: 20px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 
                 }
 
                 .opening {
-                    background-color: rgb(232, 232, 232);
-                    width: 80vh;
-                    height: 10vh;
+                    /* background-color: rgb(232, 232, 232); */
+                    /* width: 80vh;
+                    height: 10vh; */
+                    flex: 1;
+                    padding: 20px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
                 }
 
 
@@ -1423,36 +1463,64 @@ i{
     }
 
     .big-part {
-        padding-inline: 30px;
-        height: 70vh;
+        /* padding-inline: 30px; */
+        /* height: 70vh; */
+        padding: 30px;
+        border-radius: 8px;
 
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 94%;
-        background-color: pink;
-
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
+        /* width: 94%; */
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
 
         gap: 20px;
 
-        input {
+        input,
+        textarea {
 
-            width: 350px;
+            /* width: 350px;
             height: 6vh;
+             width: 100%; */
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 12px;
+            width: 100%;
+
         }
 
         .name-email {
             display: flex;
-            gap: 20px;
+            gap: 25px;
+            width: 100%;
 
+
+        }
+
+        .inp1 {
+            width: 80vh;
+        }
+
+        .inp2 {
+            width: 70vh;
         }
 
 
     }
 
+    .button5 {
+
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+
+    }
 
     button {
         border: none;
@@ -1461,6 +1529,9 @@ i{
         width: 190px;
         height: 50px;
         border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
 
 
