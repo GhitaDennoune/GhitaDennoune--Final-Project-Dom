@@ -9,7 +9,6 @@ let closebtn = document.querySelector(".close")
 
 let signup = document.querySelector(".signup")
 let login = document.querySelector(".login")
-
 let tbdal = document.querySelectorAll(".switch")
 
 // db fach open modale 
@@ -51,7 +50,7 @@ tbdal.forEach(ele => {
 });
 
 
-
+// db ndiron les info w des condition kifach yta3tawni w nkhznhom w ndir logine b les info li t3taw f sigin up
 let usersDatabase = [];
 class User {
     constructor(fullName, email, password) {
@@ -63,6 +62,9 @@ class User {
     }
 }
 
+
+
+// hadi buttun dyal vudei lwl li f herso section 
 let hero = document.querySelector(".hero2")
 let video = document.querySelector(".ratio")
 let clos = document.querySelector(".closes")
@@ -89,6 +91,18 @@ video2.style.display = "block";
 })
 sda.addEventListener("click", () => {
     video.style.display = "none"
+
+
+})
+
+// *********************menu*************************
+let breakf = document.querySelector(".breakfest-click")
+let btnbreak = document.querySelector(".span2")
+
+btnbreak.addEventListener("click" , () => {
+breakf.style.display = "block";
+
+
 
 
 })
