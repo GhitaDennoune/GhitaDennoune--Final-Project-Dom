@@ -16,11 +16,11 @@ let tbdal = document.querySelectorAll(".switch")
 mybtn.addEventListener("click", () => {
     modaldiv.style.display = "block";
     login.classList.add("active");
-  signup.classList.remove("active");
+    signup.classList.remove("active");
 })
 // db fach n close 
-closebtn.addEventListener("click" , () => {
-modaldiv.style.display="none"
+closebtn.addEventListener("click", () => {
+    modaldiv.style.display = "none"
 
 
 })
@@ -29,25 +29,25 @@ modaldiv.style.display="none"
 
 
 
-function switchlogin(){
-signup.classList.remove("active")
-login.classList.add("active")
+function switchlogin() {
+    signup.classList.remove("active")
+    login.classList.add("active")
 
 }
-function switchsiginup(){
-login.classList.remove("active")
-signup.classList.add("active")
+function switchsiginup() {
+    login.classList.remove("active")
+    signup.classList.add("active")
 
 }
 
 tbdal.forEach(ele => {
-  ele.addEventListener("click", () => {
-    if(ele.dataset.target === "login") {
-      switchsiginup();
-    } else {
-      switchlogin();
-    }
-  });
+    ele.addEventListener("click", () => {
+        if (ele.dataset.target === "login") {
+            switchsiginup();
+        } else {
+            switchlogin();
+        }
+    });
 });
 
 
@@ -57,10 +57,22 @@ class User {
     constructor(fullName, email, password) {
         this.fullName = fullName;
         this.email = email;
-      
+
         this.password = password;
-       
-    }}
-    
+
+    }
+}
+
+let hero = document.querySelector(".hero2")
+let video = document.querySelector(".ratio")
+let clos = document.querySelector(".closes")
+
+hero.addEventListener("click", () => {
+    video.style.display = "block";
+
+})
+clos.addEventListener("click", () => {
+    video.style.display = "none"
 
 
+})
