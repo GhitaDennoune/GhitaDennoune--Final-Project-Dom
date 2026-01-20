@@ -291,7 +291,7 @@ body {
     img {
         padding-left: 150px;
         position: absolute;
-        animation: tabsile 2s ease-in-out  infinite alternate-reverse both ;
+        animation: tabsile 2s ease-in-out infinite alternate-reverse both;
     }
 
 
@@ -299,18 +299,19 @@ body {
 
 
 }
-    @keyframes tabsile {
 
-        0% {
-            transform: translateY(10px);
-        }
+@keyframes tabsile {
 
-        100% {
-
-
-            transform: translateY(-10px);
-        }
+    0% {
+        transform: translateY(10px);
     }
+
+    100% {
+
+
+        transform: translateY(-10px);
+    }
+}
 
 /* section About Us */
 .about {
@@ -931,15 +932,16 @@ body {
 
 
 /* hadi db l caroussel tania  */
-.caroussel2{
-width: 100%;
-height: 100vh;
-background-color: red;
-display: flex;
-img{
-    width: 100px;
-    height: 100px;
-}
+.caroussel2 {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 
@@ -1126,7 +1128,8 @@ img{
         padding-top: 30px;
 
         h2 {
-            font-family: "Satisfy", cursive;
+            font-family: 'Amatic SC', cursive;
+            font-size: 40px;
 
         }
 
@@ -1200,6 +1203,57 @@ img{
 
 }
 
+
+
+/* db carousel 333333333333333333 */
+
+.caroussel3 {
+    width: 100%;
+    height: 80vh;
+    background-color: #e7e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 30px;
+
+
+}
+
+.akhire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+
+    p {
+        color: #c4c2c2;
+    }
+
+    h1 {
+        font-family: 'Amatic SC', cursive;
+
+        span {
+            color: rgb(202, 47, 27);
+        }
+    }
+
+}
+
+.carousel4 {
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+}
+
+
+
 /* **contact us ** */
 .contact {
     background-color: blueviolet;
@@ -1237,10 +1291,15 @@ img{
         }
 
         h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 40px;
 
             span {
-                color: orange;
+                color: rgb(202, 47, 27);
             }
+        }
+        p{
+            color: rgb(195, 195, 195);
         }
     }
 
