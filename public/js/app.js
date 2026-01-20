@@ -154,7 +154,7 @@ indicators.forEach((indicator, index) => {
     });
 });
 
-// setInterval(nextSlide, 5000);
+setInterval(nextSlide, 4000);
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') prevSlide();
