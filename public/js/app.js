@@ -76,3 +76,20 @@ clos.addEventListener("click", () => {
 
 
 })
+// buttun video number2
+
+let btn2 = document.querySelector(".btn")
+let video2 = document.querySelector(".video")
+let sda = document.querySelector(".close")
+btn2.addEventListener("click" , () => {
+video2.style.display = "block";
+
+
+
+})
+sda.addEventListener("click", () => {
+    video.style.display = "none"
+
+
+})
+

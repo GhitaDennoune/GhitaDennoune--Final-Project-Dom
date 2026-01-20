@@ -198,6 +198,32 @@ body {
     }
 }
 
+.video {
+
+    /* display: none; */
+    width: 100vh;
+    .close {
+
+        position: absolute;
+
+        right: 80px;
+
+        background-color: red;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+
+
+    }
+
+    z-index: 11;
+
+    if2 {
+        width: 90vh;
+        height: 100vh;
+
+    }
+}
 .descr {
 
     width: 70vh;
