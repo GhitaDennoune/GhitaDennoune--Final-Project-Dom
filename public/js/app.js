@@ -8,14 +8,14 @@ let closebtn = document.querySelector(".close")
 
 
 let signup = document.querySelector(".signup")
-let login = document.querySelector(".login")
-let tbdal = document.querySelectorAll(".switch")
-
+let login = document.querySelector("#logen")
+// let tbdal = document.querySelectorAll(".switch")
+let login7 = document.querySelector("#sigin")
+let login8 = document.querySelector("#logi2")
 // db fach open modale 
 mybtn.addEventListener("click", () => {
     modaldiv.style.display = "block";
-    login.classList.add("active");
-    signup.classList.remove("active");
+    login.style.display = "none"
 })
 // db fach n close 
 closebtn.addEventListener("click", () => {
@@ -28,27 +28,44 @@ closebtn.addEventListener("click", () => {
 
 
 
-function switchlogin() {
-    signup.classList.remove("active")
-    login.classList.add("active")
+// function switchlogin() {
+//     signup.classList.remove("active")
+//     login.classList.add("active")
 
-}
-function switchsiginup() {
-    login.classList.remove("active")
-    signup.classList.add("active")
+// }
+// function switchsiginup() {
+//     login.classList.remove("active")
+//     signup.classList.add("active")
 
-}
+// }
 
-tbdal.forEach(ele => {
-    ele.addEventListener("click", () => {
-        if (ele.dataset.target === "login") {
-            switchsiginup();
-        } else {
-            switchlogin();
-        }
-    });
-});
+// tbdal.forEach(ele => {
+//     // ele.addEventListener("click", () => {
+//     //     if (ele.dataset.target === "login") {
+//     //         switchsiginup();
+//     //     } else if(ele.dataset.target === " signup") {
+//     //         switchlogin();
+//     //     }
+//     // });
+// });
 
+login7.addEventListener("click" , () => {
+login.style.display = "block"
+ signup.style.display= "none"
+
+
+})
+
+login8.addEventListener("click" , () => {
+login.style.display = "none"
+ signup.style.display= "block"
+
+
+})
+
+
+
+console.log(login);
 
 // db ndiron les info w des condition kifach yta3tawni w nkhznhom w ndir logine b les info li t3taw f sigin up
 let usersDatabase = [];
@@ -65,47 +82,47 @@ class User {
 
 
 // hadi buttun dyal vudei lwl li f herso section 
-let hero = document.querySelector(".hero2")
-let video = document.querySelector(".ratio")
-let clos = document.querySelector(".closes")
+// let hero = document.querySelector(".hero2")
+// let video = document.querySelector(".ratio")
+// let clos = document.querySelector(".closes")
 
-hero.addEventListener("click", () => {
-    video.style.display = "block";
+// hero.addEventListener("click", () => {
+//     video.style.display = "block";
 
-})
-clos.addEventListener("click", () => {
-    video.style.display = "none"
+// })
+// clos.addEventListener("click", () => {
+//     video.style.display = "none"
 
 
-})
+// })
 // buttun video number2
 
-let btn2 = document.querySelector(".btn")
-let video2 = document.querySelector(".video")
-let sda = document.querySelector(".close")
-btn2.addEventListener("click" , () => {
-video2.style.display = "block";
+// let btn2 = document.querySelector(".btn")
+// let video2 = document.querySelector(".video")
+// let sda = document.querySelector(".close")
+// btn2.addEventListener("click" , () => {
+// video2.style.display = "block";
 
 
 
-})
-sda.addEventListener("click", () => {
-    video.style.display = "none"
+// })
+// sda.addEventListener("click", () => {
+//     video.style.display = "none"
 
 
-})
+// })
 
 // *********************menu*************************
-let breakf = document.querySelector(".breakfest-click")
-let btnbreak = document.querySelector(".span2")
+// let breakf = document.querySelector(".breakfest-click")
+// let btnbreak = document.querySelector(".span2")
 
-btnbreak.addEventListener("click" , () => {
-breakf.style.display = "block";
-
-
+// btnbreak.addEventListener("click" , () => {
+// breakf.style.display = "block";
 
 
-})
+
+
+// })
 // ************************caroussel lwl ************************
 
 
@@ -160,6 +177,72 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') prevSlide();
     if (e.key === 'ArrowRight') nextSlide();
 });
+
+
+// caroussel  ************************
+
+
+// **************************hada l boooook a table ***********************************
+let btn5 = document.querySelector(".btn1")
+let modal = document.querySelector(".modal")
+let close3 = document.querySelector(".closeBtn")
+let  content = document.querySelector(".modal-content")
+let form = document.querySelector("#bookingForm")
+
+let reservations  = []
+btn5.addEventListener("click", () => {
+    modal.style.display = "block";
+   
+})
+close3.addEventListener("click", () => {
+    modal.style.display = "none";
+    close3.style.color = "red"
+   
+})
+
+form.addEventListener("submit", (e) => {
+ e.preventDefault();
+
+
+
+
+ let namee = form.querySelector("input[type='text']").value;
+let meal = form.querySelectorAll("select")[0].value;
+    let time = form.querySelectorAll("select")[1].value;
+    let persons = form.querySelector("input[type='number']").value;
+
+
+   let isReserved = reservations.some(res =>
+     res.time === time
+  );
+
+
+  if (isReserved) {
+    alert("Desolé ce temps est deja réserver");
+
+    form.reset(); 
+    return;        
+   
+  }
+
+  reservations.push({
+    namee ,
+    meal ,
+    time,
+    persons
+  });
+
+  console.log(reservations);
+
+  alert(" Reservation réussi ✅");
+
+//   db nkhwi  lia l form 
+  form.reset();            
+  modal.style.display = "none";
+})
+
+
+console.log(btn5);
 
 
 

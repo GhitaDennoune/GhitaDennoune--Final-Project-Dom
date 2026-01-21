@@ -9,6 +9,86 @@ body {
     width: 100%;
 }
 
+.btn1 {
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 12px;
+    animation: pop 0.3s ease;
+}
+
+/* @keyframes pop { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } } */
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+/* Form */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.closeBtn {
+    background: #aaa;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.reserveBtn {
+    background: #e63946;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
 
 
 .modaldiv {
@@ -72,6 +152,10 @@ body {
         background-color: #46464681;
         width: 35vh;
 
+    }
+
+    .logine2 {
+        background-color: #e63946;
     }
 
     input::placeholder {
@@ -927,12 +1011,12 @@ body {
 
     .prev-btn {
         left: 10px;
-        display: none;
+        /* display: none; */
     }
 
     .next-btn {
         right: 10px;
-        display: none;
+        /* display: none; */
     }
 
     .carousel-indicators {
@@ -944,6 +1028,7 @@ body {
         justify-content: center;
         gap: 8px;
     }
+
 
     .indicator {
         width: 12px;
@@ -983,6 +1068,31 @@ body {
         height: 100px;
     }
 }
+
+
+/* .caroussel2 .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.caroussel2 .carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.caroussel2 .carousel-slide {
+  min-width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+}
+
+.caroussel2 img {
+  width: 95%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+} */
 
 
 

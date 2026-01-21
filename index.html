@@ -23,19 +23,87 @@
             </div>
             <!-- les link  -->
             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Menu</a>
-                <a href="">Events</a>
-                <a href="">Chefs</a>
-                <a href=""> Gallery</a>
-                <a href="">Dropdown <i class="fa-solid fa-chevron-down"></i></a>
-                <a href="">Contact</a>
+                <a href="#hero">Home</a>
+                <a href="#about1">About</a>
+                <a href="#menu2">Menu</a>
+                <a href="#event">Events</a>
+                <a href="#chefs9">Chefs</a>
+                <a href="#caroussel6"> Gallery</a>
+                <a href="#hero">Dropdown <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#nav-contact">Contact</a>
             </div>
             <!-- button -->
             <div class="button">
+                <!-- 
+                <button class="btn1" id="openModalBtn">Book a Table</button>
+                
 
-                <button class="btn1">Book a Table</button>
+<div class="modal">
+  <div class="modal-content">
+    <p>im the first modal </p>
+    <button class="closeBtn">Close</button>
+  </div>
+</div>
+
+<div class="modal">
+  <div class="modal-content">
+    <p> im the second modal  </p>
+    <button class="closeBtn">reserver</button>
+  </div>
+</div> -->
+
+
+
+                <button class="btn1" id="openModalBtn">Book a Table</button>
+
+                <div class="modal" id="bookingModal">
+                    <div class="modal-content">
+                        <h2>Book a Table</h2>
+
+                        <form id="bookingForm">
+                            <!-- Full Name -->
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Your full name" required>
+                            </div>
+
+                            <!-- Meal Choice -->
+                            <div class="form-group">
+                                <label>Meal</label>
+                                <select required>
+                                    <option value="">Choose meal</option>
+                                    <option>Breakfast</option>
+                                    <option>Lunch</option>
+                                    <option>Dinner</option>
+                                </select>
+                            </div>
+
+                            <!-- Time -->
+                            <div class="form-group">
+                                <label>Time</label>
+                                <select required>
+                                    <option value="">Choose time</option>
+                                    <option>12:00 - 13:00</option>
+                                    <option>13:00 - 14:00</option>
+                                    <option>19:00 - 20:00</option>
+                                    <option>20:00 - 21:00</option>
+                                </select>
+                            </div>
+
+                            <!-- Persons -->
+                            <div class="form-group">
+                                <label>Persons</label>
+                                <input type="number" min="1" max="10" placeholder="How many people?" required>
+                            </div>
+
+                            <div class="actions">
+                                <button type="button" class="closeBtn">Close</button>
+                                <button type="submit" class="reserveBtn">Reserve</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <button class="modalbtn">Inscription</button>
 
             </div>
@@ -48,7 +116,7 @@
 
 
     </section>
-    <!-- db andir card dyal booke a tables  -->
+
 
 
 
@@ -71,31 +139,34 @@
             <input type="password" placeholder="Password" id="password">
             <button class="regist">Register</button>
             <p>Already have an account?
-                <span class="switch" data-target="login">Login</span>
+                <button class="switch" id="sigin" data-target="login">login</button>
             </p>
 
         </div>
         <!-- LOGIN -->
-        <div class="login">
-            <h2>Login</h2>
-            <input type="email" placeholder="Enter you email ">
-            <input type="password" placeholder="Enter your password">
-            <button>Login</button>
-            <p>Don't have an account?
-                <span class="switch" data-target="signup">Sign Up</span>
+        <div class="login " id="logen">
+            <div class="logine2">
+                <h2>Login</h2>
+                <input type="email" placeholder="Enter you email ">
+                <input type="password" placeholder="Enter your password">
+                <button>Login</button>
+                <p>Don't have an account?
+                    <button class="switch" id="logi2" data-target="signup">Sign Up</button>
+            </div>
+
             </p>
         </div>
     </div>
 
     <!-- hero section  -->
     <div class="ratio ratio-16x9 w-100">
-        <button class="closes">X</button>
+        <!-- <button class="closes">X</button>
         <iframe src="https://www.youtube.com/embed/Y7f98aduVJ8?autoplay=1&mute=1&controls=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
-        </iframe>
+        </iframe> -->
     </div>
-    <section class="hero">
+    <section class="hero" id="hero">
         <!-- descripition -->
         <div class="descr">
             <div class="text">
@@ -109,6 +180,9 @@
             </div>
             <div class="butnhero">
                 <button class="hero1"> Booka a Table</button>
+                <!-- db andir card dyal booke a tables  -->
+
+
                 <button class="hero2">
 
                     <i class="fa-solid fa-circle-play"></i> <b>Watch Video</b></button>
@@ -126,7 +200,7 @@
 
     <!-- ABOUT US -->
 
-    <section class="about">
+    <section class="about" id="about1">
 
         <div class="titles">
             <p>ABOUT US</p>
@@ -230,7 +304,7 @@
 
     </section>
     <!-- section menu  -->
-    <section class="menu">
+    <section class="menu" id="menu2">
 
 
         <div class="titls1">
@@ -527,7 +601,7 @@
 
     <!-- hadi l caroussel tania 222222222222222 -->
 
-    <section class="caroussel2">
+    <section class="caroussel2" id="event">
         <div class="carousel-container">
             <div class="carousel">
                 <div class="carousel-slide">
@@ -591,7 +665,7 @@
     </section>
 
     <!-- section dyal Chefs -->
-    <section class="chefs">
+    <section class="chefs" id="chefs9">
         <div class="title2">
             <p>CHEFS</p>
             <h1>Our <span>Proffesional Chefs</span> </h1>
@@ -709,7 +783,7 @@
 
 
     <!-- db l caroussel 3333333333333333 -->
-    <section class="caroussel3">
+    <section class="caroussel3" id="caroussel6">
         <div class="akhire">
             <p>Gallery</p>
             <h1>Check <span> Our Gallery</span></h1>
