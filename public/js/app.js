@@ -23,31 +23,7 @@ closebtn.addEventListener("click", () => {
 
 
 })
-// db labghin nmchi mn sigin up l ogine w l3aks s7i7 
 
-
-
-
-// function switchlogin() {
-//     signup.classList.remove("active")
-//     login.classList.add("active")
-
-// }
-// function switchsiginup() {
-//     login.classList.remove("active")
-//     signup.classList.add("active")
-
-// }
-
-// tbdal.forEach(ele => {
-//     // ele.addEventListener("click", () => {
-//     //     if (ele.dataset.target === "login") {
-//     //         switchsiginup();
-//     //     } else if(ele.dataset.target === " signup") {
-//     //         switchlogin();
-//     //     }
-//     // });
-// });
 
 login7.addEventListener("click" , () => {
 login.style.display = "block"
@@ -81,7 +57,7 @@ class User {
 
 
 
-// hadi buttun dyal vudei lwl li f herso section 
+// *****hadi buttun dyal vudei lwl li f herso section ******
 // let hero = document.querySelector(".hero2")
 // let video = document.querySelector(".ratio")
 // let clos = document.querySelector(".closes")
@@ -112,13 +88,14 @@ class User {
 
 // })
 
+
 // *********************menu*************************
-// let breakf = document.querySelector(".breakfest-click")
-// let btnbreak = document.querySelector(".span2")
+let breakf = document.querySelector(".breakfest-click")
+let btnbreak = document.querySelector(".span2")
 
-// btnbreak.addEventListener("click" , () => {
-// breakf.style.display = "block";
-
+btnbreak.addEventListener("click" , () => {
+breakf.style.display = "block";
+})
 
 
 
@@ -240,12 +217,4 @@ let meal = form.querySelectorAll("select")[0].value;
   form.reset();            
   modal.style.display = "none";
 })
-
-
-console.log(btn5);
-
-
-
-
-
 
