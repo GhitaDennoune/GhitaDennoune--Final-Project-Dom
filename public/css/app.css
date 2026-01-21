@@ -691,7 +691,7 @@ top: 30px;
 .menu {
     width: 100%;
     height: 200vh;
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -715,7 +715,7 @@ top: 30px;
             font-size: 15px;
         }
 
-        h1 {
+        .nums1, .nums2, .nums3, .nums4 {
             font-family: 'Amatic SC', cursive;
             font-size: 40px;
 
@@ -748,9 +748,35 @@ top: 30px;
             display: flex;
             gap: 40px;
         }
+        span{
+            position: relative;
+        }
+        span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+ 
+top: 30px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(135, 27, 27); 
+  transition: width 0.3s ease;
+}
+span:hover,
+span:focus {
+  color: #4e4e59;
+}
+span:hover::after,
+span:focus::after {
+  width: 100%;
+}
     }
 
+#sp2,#sp3,#sp4{
 
+display: none;
+
+}
     .lunch {
 
         width: 100%;
@@ -851,6 +877,28 @@ top: 30px;
 
     .eos2 {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        h2 {
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 30px;
+            color: rgba(210, 9, 9, 0.777);
+        }
+    }
+    .eos{
+         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;

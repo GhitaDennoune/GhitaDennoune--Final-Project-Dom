@@ -91,13 +91,51 @@ class User {
 
 // *********************menu*************************
 let breakf = document.querySelector(".breakfest-click")
+let menu7 = document.querySelector(".span1")
 let btnbreak = document.querySelector(".span2")
+let btnbreak1 = document.querySelector(".span3")
+let btnbreak2 = document.querySelector(".span4")
 
-btnbreak.addEventListener("click" , () => {
-breakf.style.display = "block";
+let men1 = document.querySelector("#sp1")
+let men2 = document.querySelector("#sp2")
+let men3 = document.querySelector("#sp3")
+let men4 = document.querySelector("#sp4")
+
+
+
+menu7.addEventListener("click" , () => {
+men1.style.display = "block";
+men2.style.display = "none";
+men3.style.display = "none";
+men4.style.display = "none";
+
+
 })
 
+btnbreak.addEventListener("click" , () => {
+men1.style.display = "none";
+men2.style.display = "block";
+men3.style.display = "none";
+men4.style.display = "none";
 
+
+})
+btnbreak1.addEventListener("click" , () => {
+men1.style.display = "none";
+men2.style.display = "none";
+men3.style.display = "block";
+men4.style.display = "none";
+
+
+})
+btnbreak2.addEventListener("click" , () => {
+men1.style.display = "none";
+men2.style.display = "none";
+men3.style.display = "none";
+men4.style.display = "block";
+
+
+})
 
 // })
 // ************************caroussel lwl ************************
