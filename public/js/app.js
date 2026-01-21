@@ -58,19 +58,19 @@ class User {
 
 
 // *****hadi buttun dyal vudei lwl li f herso section ******
-// let hero = document.querySelector(".hero2")
-// let video = document.querySelector(".ratio")
-// let clos = document.querySelector(".closes")
+let hero = document.querySelector(".hero2")
+let video = document.querySelector(".ratio")
+let clos = document.querySelector(".closes")
 
-// hero.addEventListener("click", () => {
-//     video.style.display = "block";
+hero.addEventListener("click", () => {
+    video.style.display = "block";
 
-// })
-// clos.addEventListener("click", () => {
-//     video.style.display = "none"
+})
+clos.addEventListener("click", () => {
+    video.style.display = "none"
 
 
-// })
+})
 // buttun video number2
 
 // let btn2 = document.querySelector(".btn")
@@ -186,7 +186,7 @@ indicators.forEach((indicator, index) => {
     });
 });
 
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 5000);
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') prevSlide();
@@ -194,7 +194,8 @@ document.addEventListener('keydown', (e) => {
 });
 
 
-// caroussel  ************************
+// caroussel 2 ************************
+
 
 
 // **************************hada l boooook a table ***********************************
